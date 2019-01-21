@@ -1,0 +1,14 @@
+package com.imooc.o2o.exceptions;
+
+/**
+ * Created by zy on 2019/1/12
+ */
+public class ProductCategoryOperationException extends RuntimeException {
+
+
+    private static final long serialVersionUID = 1182563719599527969L;
+
+    public ProductCategoryOperationException(String message) {
+        super(message);
+    }
+}
