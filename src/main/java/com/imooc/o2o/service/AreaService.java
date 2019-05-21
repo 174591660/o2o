@@ -1,7 +1,9 @@
 package com.imooc.o2o.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.imooc.o2o.entity.Area;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -9,5 +11,5 @@ import java.util.List;
  */
 public interface AreaService {
 
-    List<Area> getAreaList();
+    List<Area> getAreaList() throws IOException;
 }

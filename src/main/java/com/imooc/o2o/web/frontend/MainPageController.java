@@ -39,7 +39,7 @@ public class MainPageController {
             modelMap.put("shopCategoryList", shopCategoryList);
         } catch (Exception e) {
             modelMap.put("success", false);
-            modelMap.put("errMsg", e.getMessage());
+             modelMap.put("errMsg", e.getMessage());
             return modelMap;
         }
         try {

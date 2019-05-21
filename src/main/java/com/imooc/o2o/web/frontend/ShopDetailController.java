@@ -85,6 +85,7 @@ public class ShopDetailController {
         Product productCondition = new Product();
         Shop shop = new Shop();
         shop.setShopId(shopId);
+        productCondition.setShop(shop);
         if (productCategoryId != -1) {
             ProductCategory productCategory = new ProductCategory();
             productCategory.setProductCategoryId(productCategoryId);

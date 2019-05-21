@@ -6,6 +6,7 @@ import com.imooc.o2o.service.AreaService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.IOException;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -20,7 +21,12 @@ public class AreaServiceImplTest extends BaseTest {
 
     @Test
     public void getAreaList() {
-        List<Area> areaList = areaService.getAreaList();
+        List<Area> areaList = null;
+        try {
+            areaList = areaService.getAreaList();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         assertEquals("东苑",areaList.get(0).getAreaName());
     }
 }
